@@ -1,0 +1,20 @@
+li {
+    list-style-type: none;
+    color: rgb(225, 200, 42);
+}
+
+ul li {
+ list-style-type: disc;
+}
+
+ol li {
+ list-style-type: upper-alpha;
+}
+
+.article-icon {
+    width: 100px;
+}
+
+.socials-icon {
+    width: 50px;
+}
