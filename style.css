@@ -10,6 +10,7 @@
     --black: #111111;
 }
 
+/* CSS Resets */
 html {
     box-sizing: border-box;
     font-size: 16px;
@@ -64,10 +65,12 @@ select {
     font: inherit;
 }
 
+/* Utilities */
 .display-none {
     display: none;
 }
 
+/* Components */
 .btn-primary {
     padding: 12px 16px;
     display: inline-block;
@@ -83,6 +86,7 @@ select {
     transform: translateY(-4px);
 }
 
+/* Header */
 header .mobile-header {
     padding: 16px;
 }
@@ -95,7 +99,8 @@ header button {
     height: 50px;
 }
 
-.mobile-nav {
+/* Mobile Nav */
+.mobile-nav a {
     text-decoration: none;
     color: var(--black);
     display: block;
@@ -110,6 +115,7 @@ header button {
     height: 50px;
 }
 
+/* Hero */
 .hero {
     background-color: var(--brand);
     padding: 56px 16px;
@@ -125,4 +131,80 @@ header button {
 
 .hero .hero-accent {
     color: var(--action);
+}
+
+/* Article */
+article {
+    padding: 32px 16px;
+    background-color: var(--base-light);
+    border-radius: 10px;
+    margin: 5px 10px;
+    transition: all 0.3s ease;
+}
+
+article:hover {
+    filter: contrast(150%);
+}
+
+article .icon {
+    height: 24px;
+    width: 24px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+article .article-heading h2 {
+    margin-bottom: 16px;
+    color: var(--base-dark);
+}
+
+article p {
+    margin-bottom: 16px;
+}
+
+.contact-form {
+    padding: 48px 16px;
+    border-radius: 10px;
+    margin: 5px 10px;
+}
+
+.contact-form input,
+.contact-form select {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+}
+
+.contact-form textarea {
+    display: block;
+    width: 100%;
+    padding: 8px;
+}
+
+.contact-form label {
+    display: block;
+    width: 100%;
+}
+
+.contact-form h2 {
+    color: var(--base-dark);
+    margin-bottom: 16px;
+}
+
+.contact-form input[type='submit'] {
+    background-color: var(--action);
+    border: 0;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+footer {
+    padding: 16px;
+    text-align: center;
+}
+
+.socials-icon {
+    width: 40px;
+    height: 40px;
 }
